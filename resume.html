@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="resume.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: slideDown 1s ease;
+            font-size: 32px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        section {
+            margin-bottom: 30px;
+            animation: fadeInLeft 1s ease;
+        }
+        h2 {
+            font-size: 28px;
+            color: #444;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            animation: slideUp 1s ease;
+        }
+
+        .projects-list {
+            padding: 0;
+            margin: 0;
+        }
+
+        .projects-list li {
+            margin-bottom: 20px;
+            list-style: none; /* Remove default list-style */
+            position: relative;
+            padding-left: 20px; /* Adjust spacing between bullet and text */
+        }
+
+        .projects-list li::before {
+            content: "\2022"; /* Unicode character for bullet (•) */
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #333; /* Color of the bullet */
+            font-size: 16px; /* Size of the bullet */
+            line-height: 1; /* Adjust line-height for vertical alignment */
+        }
+
+        .projects-list li span {
+            font-weight: bold;
+        }
+
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ramya Kosaraju</h1>
+        <p>ramyakosaraju@usf.edu | https://www.linkedin.com/in/kosarajuramya97/</p>
+    </header>
+    <nav>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Key Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#affiliations">Affiliations</a>
+        <a href="#honors">Honors</a>
+    </nav>
+    <div class="container" id="content">
+        <section id="education" class="fade-in">
+            <h2>Education</h2>
+            <p>Masters in Business Analytics and Information Systems </p>
+            <p>Muma College of Business, USF, Tampa, May 2025</p>
+            <p>Statistical Data Mining, Advanced Database Management, Analytical Methods for Business, Data Warehouse</p>
+        </section>
+        <section id="experience" class="fade-in">
+            <h2>Experience</h2>
+            <h3>Research Assistant</h3>
+            <p>USF, Tampa, USA</p>
+            <p>Jan 2024 - Present</p>
+            <ul>
+                <li>Working on the NAIC Insurance Dataset to digitize the yearly profits, premiums earned, and claims processed information.</li>
+                <li>Utilizing R studio to process the data for the last 20 years of data. Data frames are being utilized to process the yearly
+                    dataset.</li>
+                <li>Deriving insights and trends related to the historical data and visualizing them using various charts and graphs.</li>
+            </ul>
+            <h3>Software Developer Sr</h3>
+            <p>UCeridian HCM, Bangalore, India</p>
+            <p>Jan 2022 - July 2023</p>
+            <ul>
+                <li>Development of different SQL views, functions, procedures, and packages for various modules in the payroll domain.</li>
+                <li>Interacted directly with the clients, product owner, design, and Dev teams to analyze the requirements and
+                    prepare the test strategy, functional reports, technical reports, unit test cases, and test plan.</li>
+            </ul>
+            <h3>Senior Software Engineer</h3>
+            <p>Infosys Ltd, Hyderabad, India</p>
+            <p>Nov 2018 - Dec 2021</p>
+            <ul>
+                <li>Worked on Clarify Application to develop and support the issues and activities related to communication services.</li>
+                <li>Automated tasks to increase productivity and Performed root cause analysis to provide solutions for production issues.</li>
+                <li>Prepared Batch Execution Generated test reports and Updated reports to the higher management.</li>
+                <li>Trained New Teammates by conducting multiple Knowledge Transfer Sessions.</li>
+                <li>Managed health status of applications Curated Weekly and Daily Status reports and communicated to clients.</li>
+            </ul>
+            <h3>Software Engineer Trainee</h3>
+            <p>Infosys Ltd, Mysore, India</p>
+            <p>May 2018 - Oct 2018</p>
+            <ul>
+                <li>The Internship included learning Python, RDMS, OOPs, Data Structures, Java, UI concepts technologies,
+                    and implementing Mobile compare Web Applications.</li>
+                <li>We are trained and certified to work with Java Enterprise Applications involving Middleware and Backend</li>
+            </ul>
+        </section>
+        <section id="projects" class="fade-in">
+            <h2>Key Projects</h2>
+            <ul>
+                <li>Project 1: Description</li>
+                <li>Project 2: Description</li>
+            </ul>
+        </section>
+        <section id="skills" class="fade-in">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+        <section id="affiliations" class="fade-in">
+            <h2>Affiliations</h2>
+            <ul>
+                <li>Affiliation 1</li>
+                <li>Affiliation 2</li>
+            </ul>
+        </section>
+        <section id="honors" class="fade-in">
+            <h2>Honors</h2>
+            <ul>
+                <li>Honor 1</li>
+                <li>Honor 2</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        Your Footer Content
+    </footer>
+    <script src="resume.js"></script>
+</body>
+</html>
